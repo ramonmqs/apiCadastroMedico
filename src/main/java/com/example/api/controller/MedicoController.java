@@ -1,7 +1,7 @@
 package com.example.api.controller;
 
-import com.example.api.endereco.Endereco;
-import com.example.api.medico.*;
+import com.example.api.domain.medico.*;
+import com.example.api.domain.medico.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -12,11 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/medicos")
-public class MedicoController {
+public class    MedicoController {
 
     @Autowired
     private MedicoRepository repository;
